@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/static/css/cadastro.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-300">
+    <div class="flex flex-col items-center p-8">
+        <img class="w-52 h-16 mb-16" src="/static/images/logo.svg" alt="logo">
+        <h1 class="text-blue-700 text-2xl font-bold mb-5">ENTRE EM SUA CONTA</h1>
+        <form class="flex flex-col h-full space-y-2" action="/login" id="login" method="post">
+            <label for="nome">Email</label>
+            <input class="p-4" type="text" name="nome" id="nome" required placeholder="Digite seu email">          
+            <label for="Senha"  id="senha">Senha</label>
+            <input class="p-4" type="password" name="senha" id="senha" placeholder="Digite sua senha">
+            <button type="submit" id="btn_login"> Entrar </button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
